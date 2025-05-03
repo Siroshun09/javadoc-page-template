@@ -1,0 +1,83 @@
+name: Deploy JavaDoc
+
+on:
+  workflow_call:
+    inputs:
+      project_name:
+        required: true
+        type: string
+      project_description:
+        required: true
+        type: string
+      custom_domain:
+        required: true
+        type: string
+      javadocs_branch:
+        description: 'Branch containing JavaDocs'
+        required: false
+        type: string
+        default: 'javadocs'
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        description: 'Cloudflare API Token for deployment'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout template repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: Siroshun09/javadoc-page-template
+          path: template
+
+      - name: Checkout javadocs branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: ${{ github.repository }}
+          ref: ${{ inputs.javadocs_branch }}
+          path: javadocs
+
+      - name: Setup Node.js
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
+        with:
+          node-version-file: 'template/.node-version'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          package_json_file: 'template/package.json'
+
+      - name: Install dependencies
+        working-directory: template
+        run: pnpm install
+
+      - name: Run setup-javadoc
+        working-directory: template
+        run: pnpm setup-javadoc
+        env:
+          VITE_WORKING_DIR: work
+          VITE_JAVADOC_DIR: ../javadocs
+          VITE_PROJECT_NAME: ${{ inputs.project_name }}
+          VITE_PROJECT_DESCRIPTION: ${{ inputs.project_description }}
+          VITE_PROJECT_GITHUB: ${{ github.repository }}
+
+      - name: Run setup-wrangler
+        working-directory: template
+        run: pnpm setup-wrangler
+        env:
+          VITE_PROJECT_NAME: ${{ inputs.project_name }}
+          VITE_CUSTOM_DOMAIN: ${{ inputs.custom_domain }}
+
+      - name: Generate pages
+        working-directory: template
+        run: pnpm build
+        env:
+          VITE_WORKING_DIR: work
+
+      - name: Deploy to Cloudflare
+        working-directory: template
+        run: wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
