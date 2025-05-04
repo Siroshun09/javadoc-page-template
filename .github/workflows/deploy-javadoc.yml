@@ -18,6 +18,9 @@ on:
         type: string
         default: 'javadocs'
     secrets:
+      CLOUDFLARE_ACCOUNT_ID:
+        description: 'Cloudflare Account Id for deployment'
+        required: true
       CLOUDFLARE_API_TOKEN:
         description: 'Cloudflare API Token for deployment'
         required: true
