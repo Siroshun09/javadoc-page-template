@@ -64,7 +64,7 @@ jobs:
           VITE_JAVADOC_DIR: ../javadocs
           VITE_PROJECT_NAME: ${{ inputs.project_name }}
           VITE_PROJECT_DESCRIPTION: ${{ inputs.project_description }}
-          VITE_PROJECT_GITHUB: ${{ github.repository }}
+          VITE_PROJECT_GITHUB: https://github.com/${{ github.repository }}
 
       - name: Run setup-wrangler
         working-directory: template
