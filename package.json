@@ -10,7 +10,7 @@
 		"fix": "pnpm biome check --write ./",
 		"setup-javadoc": "node scripts/setup-javadoc.js",
 		"setup-wrangler": "node scripts/setup-wrangler.js",
-    "deploy": "pnpm wrangler deploy"
+		"deploy": "pnpm wrangler deploy"
 	},
 	"dependencies": {
 		"react": "^19.1.0",
@@ -18,7 +18,7 @@
 		"semver": "^7.7.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
+		"@biomejs/biome": "2.0.0",
 		"@types/node": "^22.15.3",
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.3",

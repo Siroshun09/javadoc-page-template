@@ -50,7 +50,9 @@ body {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 0.5s ease, transform 0.5s ease;
+	transition:
+		opacity 0.5s ease,
+		transform 0.5s ease;
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -218,7 +220,9 @@ li {
 	top: 50%;
 	transform: translateY(-50%);
 	opacity: 0;
-	transition: opacity 0.2s ease, transform 0.2s ease;
+	transition:
+		opacity 0.2s ease,
+		transform 0.2s ease;
 }
 
 .version-link:hover {
