@@ -18,7 +18,7 @@
 		"semver": "^7.7.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.0.2",
+		"@biomejs/biome": "2.0.4",
 		"@types/node": "^22.15.3",
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.3",
