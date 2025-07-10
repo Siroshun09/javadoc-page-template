@@ -32,7 +32,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react-swc':
         specifier: ^3.9.0
-        version: 3.10.2(vite@7.0.3(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2))
+        version: 3.10.2(vite@7.0.4(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2))
       globals:
         specifier: ^16.0.0
         version: 16.3.0
@@ -41,7 +41,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^7.0.0
-        version: 7.0.3(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2)
+        version: 7.0.4(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2)
       wrangler:
         specifier: ^4.14.1
         version: 4.24.0
@@ -1041,8 +1041,8 @@ packages:
   unenv@2.0.0-rc.17:
     resolution: {integrity: sha512-B06u0wXkEd+o5gOCMl/ZHl5cfpYbDZKAT+HWTL+Hws6jWu7dCiqBBXXXzMFcFVJb8D4ytAnYmxJA83uwOQRSsg==}
 
-  vite@7.0.3:
-    resolution: {integrity: sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==}
+  vite@7.0.4:
+    resolution: {integrity: sha512-SkaSguuS7nnmV7mfJ8l81JGBFV7Gvzp8IzgE8A8t23+AxuNX61Q5H1Tpz5efduSN7NHC8nQXD3sKQKZAu5mNEA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1552,11 +1552,11 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react-swc@3.10.2(vite@7.0.3(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2))':
+  '@vitejs/plugin-react-swc@3.10.2(vite@7.0.4(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.11
       '@swc/core': 1.12.0
-      vite: 7.0.3(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2)
+      vite: 7.0.4(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -1870,7 +1870,7 @@ snapshots:
       pathe: 2.0.3
       ufo: 1.6.1
 
-  vite@7.0.3(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2):
+  vite@7.0.4(@types/node@22.16.2)(jiti@2.4.2)(lightningcss@1.29.2):
     dependencies:
       esbuild: 0.25.6
       fdir: 6.4.6(picomatch@4.0.2)
