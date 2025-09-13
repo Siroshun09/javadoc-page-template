@@ -2,7 +2,7 @@
 	"name": "javadoc-page-template",
 	"version": "0.0.0",
 	"type": "module",
-	"packageManager": "pnpm@10.15.1",
+	"packageManager": "pnpm@10.16.0",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -19,13 +19,13 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
-		"@types/node": "24.3.1",
-		"@types/react": "19.1.12",
+		"@types/node": "24.3.3",
+		"@types/react": "19.1.13",
 		"@types/react-dom": "19.1.9",
 		"@vitejs/plugin-react-swc": "4.0.1",
 		"globals": "16.4.0",
 		"typescript": "5.9.2",
 		"vite": "7.1.5",
-		"wrangler": "4.35.0"
+		"wrangler": "4.36.0"
 	}
 }
