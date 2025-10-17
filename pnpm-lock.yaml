@@ -22,8 +22,8 @@ importers:
         specifier: 2.2.6
         version: 2.2.6
       '@types/node':
-        specifier: 24.8.0
-        version: 24.8.0
+        specifier: 24.8.1
+        version: 24.8.1
       '@types/react':
         specifier: 19.2.2
         version: 19.2.2
@@ -32,7 +32,7 @@ importers:
         version: 19.2.2(@types/react@19.2.2)
       '@vitejs/plugin-react-swc':
         specifier: 4.1.0
-        version: 4.1.0(vite@7.1.10(@types/node@24.8.0)(jiti@2.4.2)(lightningcss@1.29.2))
+        version: 4.1.0(vite@7.1.10(@types/node@24.8.1)(jiti@2.4.2)(lightningcss@1.29.2))
       globals:
         specifier: 16.4.0
         version: 16.4.0
@@ -41,7 +41,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 7.1.10
-        version: 7.1.10(@types/node@24.8.0)(jiti@2.4.2)(lightningcss@1.29.2)
+        version: 7.1.10(@types/node@24.8.1)(jiti@2.4.2)(lightningcss@1.29.2)
       wrangler:
         specifier: 4.43.0
         version: 4.43.0
@@ -769,8 +769,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/node@24.8.0':
-    resolution: {integrity: sha512-5x08bUtU8hfboMTrJ7mEO4CpepS9yBwAqcL52y86SWNmbPX8LVbNs3EP4cNrIZgdjk2NAlP2ahNihozpoZIxSg==}
+  '@types/node@24.8.1':
+    resolution: {integrity: sha512-alv65KGRadQVfVcG69MuB4IzdYVpRwMG/mq8KWOaoOdyY617P5ivaDiMCGOFDWD2sAn5Q0mR3mRtUOgm99hL9Q==}
 
   '@types/react-dom@19.2.2':
     resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
@@ -1559,7 +1559,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/node@24.8.0':
+  '@types/node@24.8.1':
     dependencies:
       undici-types: 7.14.0
 
@@ -1571,11 +1571,11 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.10(@types/node@24.8.0)(jiti@2.4.2)(lightningcss@1.29.2))':
+  '@vitejs/plugin-react-swc@4.1.0(vite@7.1.10(@types/node@24.8.1)(jiti@2.4.2)(lightningcss@1.29.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.35
       '@swc/core': 1.13.19
-      vite: 7.1.10(@types/node@24.8.0)(jiti@2.4.2)(lightningcss@1.29.2)
+      vite: 7.1.10(@types/node@24.8.1)(jiti@2.4.2)(lightningcss@1.29.2)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -1871,7 +1871,7 @@ snapshots:
       pathe: 2.0.3
       ufo: 1.6.1
 
-  vite@7.1.10(@types/node@24.8.0)(jiti@2.4.2)(lightningcss@1.29.2):
+  vite@7.1.10(@types/node@24.8.1)(jiti@2.4.2)(lightningcss@1.29.2):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -1880,7 +1880,7 @@ snapshots:
       rollup: 4.47.1
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.8.0
+      '@types/node': 24.8.1
       fsevents: 2.3.3
       jiti: 2.4.2
       lightningcss: 1.29.2
