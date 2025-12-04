@@ -13,8 +13,8 @@
 		"deploy": "pnpm wrangler deploy"
 	},
 	"dependencies": {
-		"react": "19.2.0",
-		"react-dom": "19.2.0",
+		"react": "19.2.1",
+		"react-dom": "19.2.1",
 		"semver": "7.7.3"
 	},
 	"devDependencies": {
@@ -26,6 +26,6 @@
 		"globals": "16.5.0",
 		"typescript": "5.9.3",
 		"vite": "7.2.6",
-		"wrangler": "4.52.0"
+		"wrangler": "4.53.0"
 	}
 }
