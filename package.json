@@ -26,6 +26,6 @@
 		"globals": "17.4.0",
 		"typescript": "6.0.2",
 		"vite": "8.0.2",
-		"wrangler": "4.76.0"
+		"wrangler": "4.77.0"
 	}
 }
