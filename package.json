@@ -2,7 +2,7 @@
 	"name": "javadoc-page-template",
 	"version": "0.0.0",
 	"type": "module",
-	"packageManager": "pnpm@10.33.2",
+	"packageManager": "pnpm@10.33.3",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -26,6 +26,6 @@
 		"globals": "17.6.0",
 		"typescript": "6.0.3",
 		"vite": "8.0.10",
-		"wrangler": "4.87.0"
+		"wrangler": "4.88.0"
 	}
 }
