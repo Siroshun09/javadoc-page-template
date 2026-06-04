@@ -2,7 +2,7 @@
 	"name": "javadoc-page-template",
 	"version": "0.0.0",
 	"type": "module",
-	"packageManager": "pnpm@11.3.0",
+	"packageManager": "pnpm@11.4.0",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -18,7 +18,7 @@
 		"semver": "7.8.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.15",
+		"@biomejs/biome": "2.4.16",
 		"@types/node": "24.12.4",
 		"@types/react": "19.2.15",
 		"@types/react-dom": "19.2.3",
